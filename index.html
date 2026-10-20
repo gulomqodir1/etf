@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XARIZMA - Караоке-клуб в центре Москвы</title>
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <!-- ==============================================
+         SUZIB YURUVCHI ELEMENTLAR (FIXED / RELATIVE)
+         O'ng tomonda bog'lanish va yuqoriga qaytish tugmalari
+         ============================================== -->
+    <div class="floating-contact">
+        <a href="https://t.me/" target="_blank" class="floating-contact__btn" title="Связаться с нами">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21.5 2.5L2 10.5L9 14.5L18.5 6L11 16L19 21.5L21.5 2.5Z" fill="#16171B" stroke="#16171B" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <span class="floating-contact__text">СВЯЗАТЬСЯ С НАМИ</span>
+    </div>
+
+    <div class="scroll-top" id="scrollTopBtn">
+        <a href="#header" class="scroll-top__btn" title="Подняться вверх">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M18 15l-6-6-6 6"/>
+            </svg>
+        </a>
+        <span class="scroll-top__text">ПОДНЯТЬСЯ ВВЕРХ</span>
+    </div>
+
+
+    <!-- ==============================================
+         HEADER
+         Sayt bosh qismi (Logo, Telefon, Manzil, Tugmalar)
+         ============================================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <!-- Logo -->
+                <a href="./index.html" class="header__logo">
+                    <img src="./images/logo_02 1.png" alt="XARIZMA Logo">
+                </a>
+
+                <!-- Aloqa va Lokatsiya -->
+                <div class="header__contacts">
+                    <div class="header__contact-item">
+                        <span class="icon-circle">
+                            <img src="./images/icons8_shake_phone 1.png" alt="Phone icon">
+                        </span>
+                        <a href="tel:+380979709090" class="header__contact-link">+38 (097) 970-90-90</a>
+                    </div>
+
+                    <div class="header__contact-item">
+                        <span class="icon-circle">
+                            <img src="./images/icons8_marker 1.png" alt="Location icon">
+                        </span>
+                        <span class="header__location-text">м. Лубянка</span>
+                    </div>
+                </div>
+
+                <!-- Harakat tugmalari -->
+                <div class="header__actions">
+                    <a href="#halls" class="btn btn--outline">Наши залы</a>
+                    <a href="#advantages" class="btn btn--white">Забронировать</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ==============================================
+         MAIN CONTENT
+         ============================================== -->
+    <main class="main">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-section__banner">
+                <img src="./images/Xarizma (1).png" alt="Xarizma Hero Banner" class="hero-section__img">
+            </div>
+        </section>
+
+
+        <!-- 2. НАШИ ЗАЛЫ SECTION -->
+        <section class="halls-section" id="halls">
+            <div class="halls-section__banner">
+                <img src="./images/halls.png" alt="Наши залы" class="halls-section__img">
+            </div>
+        </section>
+
+
+        <!-- 3. НАШИ ПРЕИМУЩЕСТВА (POSITION: RELATIVE ASOSIY QISMI) -->
+        <section class="advantages" id="advantages">
+            <div class="container">
+
+                <!-- Sarlavhalar -->
+                <div class="section-title">
+                    <h2 class="section-title__heading">НАШИ ПРЕИМУЩЕСТВА</h2>
+                    <p class="section-title__sub">ПОЧЕМУ ГОСТИ ВЫБИРАЮТ НАС</p>
+                </div>
+
+                <!-- Asosiy blok: Ota konteyner (position: relative) -->
+                <div class="advantages__wrapper">
+
+                    <!-- Chap qism: 6 ta afzallik kartochkalari (Grid) -->
+                    <div class="advantages__cards-grid">
+
+                        <!-- Karta 1 -->
+                        <div class="adv-card adv-card--dark1">
+                            <div class="adv-card__icon-box">
+                                <img src="./images/Vector (2).png" alt="Никакого дресс-контроля" class="adv-card__icon">
+                            </div>
+                            <h3 class="adv-card__title">Никакого дресс-контроля</h3>
+                        </div>
+
+                        <!-- Karta 2 -->
+                        <div class="adv-card adv-card--dark2">
+                            <div class="adv-card__icon-box">
+                                <img src="./images/icons8_cd 1.png" alt="40.000 песен" class="adv-card__icon">
+                            </div>
+                            <h3 class="adv-card__title">~ 40.000 песен в сет листе</h3>
+                            <ul class="adv-card__list">
+                                <li class="adv-card__item">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>Более 50,000 студийных фонограмм</span>
+                                </li>
+                                <li class="adv-card__item">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>Ежемесячное обновления репертуара</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Karta 3 -->
+                        <div class="adv-card adv-card--dark1">
+                            <div class="adv-card__icon-box">
+                                <img src="./images/icons8_party 1.png" alt="Индивидуальные залы" class="adv-card__icon">
+                            </div>
+                            <h3 class="adv-card__title">Индивидуальные залы</h3>
+                            <ul class="adv-card__list">
+                                <li class="adv-card__item">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>Только Ваша компания</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Karta 4 -->
+                        <div class="adv-card adv-card--dark2">
+                            <div class="adv-card__icon-box">
+                                <img src="./images/icons8_cash_in_hand_1 1.png" alt="Без депозита" class="adv-card__icon">
+                            </div>
+                            <h3 class="adv-card__title">Без депозита</h3>
+                            <ul class="adv-card__list">
+                                <li class="adv-card__item text-orange">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>Мы не берем депозит</span>
+                                </li>
+                                <li class="adv-card__item">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>Оплата происходит за человека в час</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Karta 5 -->
+                        <div class="adv-card adv-card--dark1">
+                            <div class="adv-card__icon-box">
+                                <img src="./images/icons8_goal 1.png" alt="Центр Москвы" class="adv-card__icon">
+                            </div>
+                            <h3 class="adv-card__title">В самом центре Москвы</h3>
+                            <ul class="adv-card__list">
+                                <li class="adv-card__item">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>м. Лубянка</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Karta 6 -->
+                        <div class="adv-card adv-card--dark2">
+                            <div class="adv-card__icon-box">
+                                <img src="./images/icons8_bottle.png" alt="Нет пробкового сбора" class="adv-card__icon">
+                            </div>
+                            <h3 class="adv-card__title">Нет пробкового сбора</h3>
+                            <ul class="adv-card__list">
+                                <li class="adv-card__item">
+                                    <img src="./images/icons8_checked 2.png" alt="✓" class="adv-card__check">
+                                    <span>Можно приносить с собой еду, напитки и алкоголь <strong class="text-orange">без пробкового сбора</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- O'ng qism: Mikrofon va Bron qilish tugmasi (Position: relative / absolute) -->
+                    <div class="advantages__promo">
+                        <div class="promo-mic-container">
+                            <img src="./images/klipartz 4.png" alt="Винтажный микрофон" class="promo-mic-img">
+                            <a href="#booking" class="btn btn--gradient promo-btn">ЗАБРОНИРОВАТЬ ЗАЛ</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 4. КАК ЗАБРОНИРОВАТЬ ЗАЛ? SECTION -->
+        <section class="booking-section" id="booking">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__heading">КАК ЗАБРОНИРОВАТЬ ЗАЛ?</h2>
+                    <p class="section-title__sub">БРОНИРОВАНИЕ ПО ШАГАМ В ЧАТ-БОТЕ</p>
+                </div>
+            </div>
+            <div class="booking-section__banner">
+                <img src="./images/booking_steps.png" alt="Бронирование по шагам в чат-боте" class="booking-section__img">
+            </div>
+        </section>
+
+
+        <!-- 5. ВОПРОСЫ И ОТВЕТЫ SECTION -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__heading">ВОПРОСЫ И ОТВЕТЫ</h2>
+                    <p class="section-title__sub">МЫ ПОДГОТОВИЛИ ОТВЕТЫ НА ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</p>
+                </div>
+
+                <div class="faq-section__wrapper">
+
+                    <!-- Chap qism: Savollar akkordeoni -->
+                    <div class="faq-accordion">
+
+                        <!-- Savol 1 (Ochiq holatda) -->
+                        <div class="faq-item faq-item--active">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Какое у вас караоке?</h4>
+                                <span class="faq-item__icon">▲</span>
+                            </div>
+                            <div class="faq-item__body">
+                                <p>Более 50,000 студийных фонограмм. Из них 80% – оригинальные минусовки в качестве PRO (mp3 - WAV).</p>
+                                <p>Ежемесячное обновления репертуара.</p>
+                                <p>Более 10,000 специальных фонограмм в сопровождении оригинальных видеоклипов.</p>
+                            </div>
+                        </div>
+
+                        <!-- Savol 2 -->
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Есть ли у вас английские песни?</h4>
+                                <span class="faq-item__icon">▼</span>
+                            </div>
+                        </div>
+
+                        <!-- Savol 3 -->
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Можно ли подключить телефон?</h4>
+                                <span class="faq-item__icon">▼</span>
+                            </div>
+                        </div>
+
+                        <!-- Savol 4 -->
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Сколько микрофонов в каждом зале?</h4>
+                                <span class="faq-item__icon">▼</span>
+                            </div>
+                        </div>
+
+                        <!-- Savol 5 -->
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Есть ли оплата картой?</h4>
+                                <span class="faq-item__icon">▼</span>
+                            </div>
+                        </div>
+
+                        <!-- Savol 6 -->
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Можно приносить с собой алкоголь и еду?</h4>
+                                <span class="faq-item__icon">▼</span>
+                            </div>
+                        </div>
+
+                        <!-- Savol 7 -->
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h4 class="faq-item__question">Как расчитывается стоимость?</h4>
+                                <span class="faq-item__icon">▼</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- O'ng qism: Tapochkalar va ma'lumot bloki -->
+                    <div class="faq-promo">
+                        <p class="faq-promo__text">
+                            В нашем заведении <strong>Бельгийский ковролин</strong>. На входе выдают
+                            <span class="text-orange">индивидуально запакованные тапочки</span>, в которые необходимо переобуться.
+                        </p>
+                        <div class="faq-promo__img-box">
+                            <img src="./images/slippers_clean.png" alt="Тапочки Inblu" class="faq-promo__img">
+                        </div>
+                        <a href="#booking" class="btn btn--gradient faq-promo__btn">ЗАБРОНИРОВАТЬ ЗАЛ</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==============================================
+         FOOTER
+         Sayt pastki qismi
+         ============================================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <!-- Logo -->
+            <a href="./index.html" class="footer__logo">
+                <img src="./images/logo_02 1.png" alt="XARIZMA Logo">
+            </a>
+
+            <!-- Telefon -->
+            <div class="footer__item">
+                <span class="icon-circle icon-circle--sm">
+                    <img src="./images/icons8_shake_phone 1.png" alt="Phone">
+                </span>
+                <a href="tel:+380979709090" class="footer__link">+38 (097) 970-90-90</a>
+            </div>
+
+            <!-- Ish vaqti -->
+            <div class="footer__item">
+                <span class="icon-circle icon-circle--sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F69020" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                </span>
+                <span class="footer__text">Пн – Вс круглосуточно</span>
+            </div>
+
+            <!-- Manzil -->
+            <div class="footer__item">
+                <span class="icon-circle icon-circle--sm">
+                    <img src="./images/icons8_marker 1.png" alt="Location">
+                </span>
+                <span class="footer__text">м. Лубянка, ул. Сретенский переулок, 4</span>
+            </div>
+
+            <!-- Yo'nalish tugmasi -->
+            <a href="https://maps.google.com" target="_blank" class="btn btn--outline btn--route">ПОСТРОИТЬ МАРШРУТ</a>
+        </div>
+    </footer>
+
+</body>
+</html>
